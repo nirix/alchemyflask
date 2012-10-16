@@ -1,0 +1,11 @@
+{% extends 'layouts/default.html' %}
+{% block content %}
+<div class="content">
+	<h2>Examples</h2>
+	<ul>
+	{% for example in examples %}
+		<li>{{ example.name }}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endblock %}
